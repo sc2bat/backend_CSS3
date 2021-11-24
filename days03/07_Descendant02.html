@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>07_Descendant02</title>
+<style type="text/css">
+	#header>h1 {background:blue;color:white;}
+	/* 후손선택자 사용시 ' ' 공백을 사용하면 지목된 선택자 안의 모든 후손선택자가 선택되지만 */
+	/* '>' 를 사용하면 바로 아래 후손 선택자만 선택됩니다 */
+	#header>h2 {background:orange;color:white;}
+	#header>#nav>h1 {background:red;color:white;}
+	#nav>h2 {background:green; color:white;}
+	
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">회사 이름/로고</h1>
+		<h2>회사 이름/로고</h2>
+		<div id="nav">
+			<h1>#header>#nav>h1</h1>
+			<h2>header 2</h2>
+			<h3>CSS3</h3>
+		</div>
+		<h1>#header>h1</h1>
+		<h2>#header>h2</h2>		
+	</div>
+	<div id="section">
+		<h1 class="title">Aside</h1>
+		<p> 무위원의 해임을 대통령에게 건의할 수 있다. 국무총리·국무위원 또는 정부위원은
+		 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 
+		 응답할 수 있다. 형사피해자는 법률이 정하는 바에 의하여 당해 사건의 재판절차에서
+		  진술할 수 있다. 국회는 헌법 또는 법률에 특별한 규정이 없는 한 재적의원 과반수의 
+		  출석과 출석의원 과반수의 찬성으로 의결한다. 가부동수인 때에는 부결된 것으로 본다.</p>
+	</div>
+</body>
+</html>
