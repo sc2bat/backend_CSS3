@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout07_1</title>
+<style type="text/css">
+	#first {position: relative; width:100%; height:100px; background:#F8FA68;}
+	#first_title {position: relative; width:400px; height:50px; background:#D3D772;
+	font-size:200%; font-weight:bold; font-family:Verdana; line-height:50px;
+	text-align:center; margin: 0 auto;}
+	#first_text {position: relative; width:400px; height:50px; background:#B2B554;
+	font-size:70%; margin: 0 auto;}
+	
+	#second{ position: relative; width:100%; height:600px; background:#F2DB8B;}
+	#view {position: relative; width:1200px; height:600px; background: orange;
+	margin: 0 auto;}
+	#view1 {position: relative; width:600px; height:600px; background:green;
+	float:left; overflow:hidden;}
+	#view2 {position: relative;width:600px; height:600px; background:#5AAFFA;
+	overflow:hidden; float:left;}
+	.rect{position: relative; width:600px; height:188px; background:white;
+	margin-bottom:18px;}
+	.rect:last-child {margin-bottom:0px;}
+	.left {position: relative;width:400px;height:188px; background:#D7DDE1;
+	float:left;}
+	.right {position: relative;width:188px; height:188px; float:right;
+	border-radius: 50%; overflow:hidden;}
+	.title {position: relative; width:370px; height:50px; margin:0 auto;
+	font-size:150%; text-align:right; line-height:50px; border-top:3px solid black;}
+	.text { position: relative; width:370px; height:133px; margin:0 auto;
+	font-size:90%; text-align:right; border-bottom:3px solid black;}
+	
+	
+</style>
+</head>
+<body>
+	<div id="first">
+		<div id="first_title">Content08 Title</div>
+		<div id="first_text">모든 국민은 법률이 정하는 바에 의하여 국가기관에
+		 문서로 청원할 권리를 가진다. 모든 국민은 그 보호하는 자녀에게 적어도 초등교
+		 육과 법률이 정하는 교육을 받게 할 의무를 진다.</div>
+	</div>
+	
+	<div id="second">
+		<div id="view">
+			<div id="view1">
+				<img alt="" src="images/Lighthouse.jpg" height="600">
+			</div>
+			<div id="view2">
+				<div class="rect">
+					<div class="left">
+						<div class="title">Segment Title</div>
+						<div class="text">모든 국민은 법률이 정하는 바에 의하여 국가기관에
+				 		문서로 청원할 권리를 가진다. 모든 국민은 그 보호하는 자녀에게 적어도 초등교
+						 육과 법률이 정하는 교육을 받게 할 의무를 진다.</div>
+					</div>
+					<div class="right">
+						<img alt="" src="images/Koala.jpg" height="188">
+					</div>
+				</div>
+				<div class="rect">
+					<div class="left">
+						<div class="title">Segment Title</div>
+						<div class="text">모든 국민은 법률이 정하는 바에 의하여 국가기관에
+				 		문서로 청원할 권리를 가진다. 모든 국민은 그 보호하는 자녀에게 적어도 초등교
+						 육과 법률이 정하는 교육을 받게 할 의무를 진다.</div>
+					</div>
+					<div class="right">
+						<img alt="" src="images/Penguins.jpg" height="188">
+					</div>
+				</div>
+				<div class="rect">
+					<div class="left">
+						<div class="title">Segment Title</div>
+						<div class="text">모든 국민은 법률이 정하는 바에 의하여 국가기관에
+				 		문서로 청원할 권리를 가진다. 모든 국민은 그 보호하는 자녀에게 적어도 초등교
+						 육과 법률이 정하는 교육을 받게 할 의무를 진다.</div>
+					</div>
+					<div class="right">
+						<img alt="" src="images/Jellyfish.jpg" height="188">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

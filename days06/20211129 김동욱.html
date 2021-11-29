@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout08_3</title>
+<style type="text/css">
+	body {margin:0px; background:#f5f6f7;}
+	#base{position: relative; width:500px; height:100%; margin:0 auto;}
+	#Naver_logo {position: relative; width:300px; margin:0 auto;}
+	#h3 {position:relative; margin:20px 0px 10px; text-align:left; font-size:130%;}
+	.input { padding: 10px; border: 1px solid black; background:white; font-size:120%;}
+	.box {position:relative; width:520px; height:40px; background:white; border:1px solid black;}
+	#id, #pwd, #name, #email, #btn_num {position:relative; width:500px; height:30px; background:white; border:1px solid black;}
+	.idadd {position: relative; float:right; top:-40px; color: gray;}
+	.key_img{position: relative; float:right; top:-40px;}
+	
+    #year, #day{width: 150px; height: 40px; border: 1px solid black;}
+    #month {width: 150px; height: 45px; border: 1px solid black;}
+    #gender {width:500px; height:40px; }
+    #email {border:0px;}
+    #email_select {position: relative; color:gray; top:-40px; left:150px;}
+    .selectbox{padding: 10px; border: 0px; height:35px; background:white;	font-size: 15px;}
+    #phone_num, #country {position:relative; width:520px; height:40px;}
+    #phone {position: relative;width:350px; height:30px; background:white; float:left; border:1px solid black;}
+    #btn {position: relative; width:130px; height:50px; background:green; float:right; border:1px solid black; color:white;}
+    #btn_num {padding:5px; width: 500px; border:0px; }
+    #signupbtn{position: relative; width:520px; height:50px; background:green; border:1px solid black; margin: 0 auto; color:white;}
+    input[type=text]{ font-size:15px;}
+    footer {text-align:center;}
+</style>
+</head>
+<body>
+	<div id="base">
+		<div id="Naver_logo">
+			<a href="https://www.naver.com/" target="_blank">
+				<img alt="" src="images/naver_logo.png">
+			</a>
+		</div>
+		<div>
+			<h3>아이디</h3>
+			<div>
+				<input type="text" id="id" class="input"></input>
+				<span class="idadd">@naver.com</span>
+			</div>
+		</div>
+		<div>
+			<h3>비밀번호</h3>
+			<div>
+				<input type="password" id="pwd" class="input"></input>
+				<span class="key_img"><img alt="" src="images/key1.png"></span>
+			</div>
+		</div>
+		<div>
+			<h3>비밀번호 재확인</h3>
+			<div>
+				<input type="password" id="pwd" class="input"></input>
+				<span class="key_img"><img alt="" src="images/key2.png"></span>
+			</div>
+		</div>
+		<div>
+			<h3>이름</h3>
+			<div>
+				<input type="text" id="name" class="input"></input>
+			</div>
+		</div>
+		<div>
+			<h3>생년월일</h3>
+			<span class="input_day">
+				<input type="text" id="year" placeholder="년(4자)"></input>
+			</span>
+			<span class="input_month" style="margin-left: 13px;">
+				<select id="month" class="selectbox">
+					<option value="month">월</option>	<option value="1">1</option>
+					<option value="2">2</option>	<option value="3">3</option>
+					<option value="4">4</option>	<option value="5">5</option>
+					<option value="6">6</option>	<option value="7">7</option>
+					<option value="8">8</option>	<option value="9">9</option>
+					<option value="10">10</option>	<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+			</span>
+			<span class="input_day" style="margin-left: 13px;">
+				<input type="text" id="day" placeholder="일"></input>
+			</span>
+		</div>
+		<div>
+			<h3>성별</h3>
+			<div class="box">
+				<select id="gender" class="selectbox">
+					<option value="gender">성별</option>
+                        <option value="man">남자</option>
+                        <option value="woman">여자</option>
+                        <option value="none">선택 안함</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<h3>본인 확인 이메일</h3>
+            <span id="email_select">(선택)</span>
+            <span class="input">
+            	<input id="email" type="text" placeholder="선택입력"></input>
+			</span>
+		</div>
+		<div>
+			<h3>휴대전화</h3>
+			<div class="box" style="margin-bottom: 15px;">
+				<select id="country" class="selectbox">
+					<option value="1">대한민국 +82</option>
+					<option value="2">가나 +233</option>
+					<option value="3">가봉 +241</option>
+					<option value="4">가이아나 +592</option>
+				</select>
+			</div>
+			<div id="phone_num" style="margin-bottom: 20px;">
+				<span>
+					<input type="text" id="phone" class="input" placeholder="전화번호 입력"></input>
+				</span>
+				<span class="btn_phone">
+                     <input type="button" id="btn" value="인증번호 받기"></button>
+				</span>
+			</div>
+			<div class="box" style="margin-bottom: 20px;">
+				<input type="text" id="btn_num" placeholder="인증번호 입력하세요"></input>
+			</div>
+		</div>
+		<div style="margin-bottom: 20px;">
+			<input type="button" id="signupbtn" value="가입하기"></button>
+		</div>
+		
+		 <footer>
+            <div class="copyright" style="font-size: 12px;">
+                <span>이용약관 | 개인정보처리방침 | 책임의 한계와 고지 | 회원정보 고객센터</span><br />
+               <div><span><img alt="" src="images/naver_logo.png" height="12px">
+	            Copyright NAVER Corp. All Rights Reserved.</span></div>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>

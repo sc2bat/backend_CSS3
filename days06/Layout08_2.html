@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout08_2</title>
+<style type="text/css">
+	body{margin:0px; background:#f5f6f7;}
+	#base {position: relative; width:100%; height:100%;}
+	#Naver_logo {position: relative; width:300px; margin:0 auto;}
+	.font {position: relative; width: 500px; height:40px; font-size:120%;
+	margin:0 auto; font-weight:bold; line-height:40px; border:0px;}
+	#day_font {position: relative; width: 140px; height:40px; font-size:120%;
+	font-weight:bold; line-height:40px; border:0px;}
+	.box {position: relative; width:500px; height:35px; background:white;
+	margin:0 auto; border:1px solid black; padding:5px; }
+	.font_s {position: relative; float:right; color:gray; font-size:90%; line-height:40px;}
+	.font_s:last-child{float:none;}	
+	.input {position: relative; width:300px; height: 30px; font-size:20px; border:0px;}
+	.key_img {position: relative; float:right; top:7px;}
+	#days{position: relative; width:510px; height:50px; margin:0 auto; 
+/* 	background:white; */
+	}
+	.day_box {position: relative; width:155px; height:50px; background:white;
+	border:1px solid black; float:left; margin-right:19px; }
+	.day_box:last-child{margin-right:0px; float:right;}
+	.day_input {position: relative; width:150px; height: 40px; font-size:20px; border:0px;
+	float:left; }
+	
+	#f_p {position: relative; width:500px; height:40px; margin:0 auto;}
+	.p_box{position: relative; width:330px; height:35px; background:white;
+	float:left; margin-right:20px; border:1px solid black; }
+	.p_input { position: relative; width:130px; height:40px; font-size:120%; border:0px;
+	float:left;} 
+	
+	#button1 {width:150px; height:45px; background:green;  border:1px solid black; 
+	text-align:center; line-height:40px; font-size:120%; color:white; float:left; }	
+	#button2 {width:500px; height:40px; background:green;  border:1px solid black; 
+	text-align:center; line-height:40px; font-size:120%; color:white; margin-top:10px;}	
+
+	#end {position: relative;width:500px; height:20px; font-size:70%;
+	margin:0 auto; text-align:center;}
+	
+	
+</style>
+</head>
+<body>
+	<div id="base">
+		<div id="Naver_logo">
+			<a href="https://www.naver.com/">
+				<img alt="" src="images/naver_logo.png" width="300">
+			</a>
+		</div>
+		<div id="id">
+			<div class="font">아이디</div>
+			<div class="box">
+				<input type="text" id="id" class="input">
+				<span class="font_s">@naver.com</span>
+			</div>
+		</div>
+		<div id="pwd">
+			<div class="font">비밀번호</div>
+			<div class="box">
+				<input type="password" id="pwd" class="input">
+				<div class="key_img">
+					<img alt="" src="images/key1.png">
+				</div>
+			</div>
+		</div>
+		<div id="pwd_r">
+			<div class="font">비밀번호 재확인</div>
+			<div class="box">
+				<input type="password" id="pwd" class="input">
+				<div class="key_img">
+					<img alt="" src="images/key2.png">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="font">이름</div>
+			<div class="box">
+				<input type="text" id="name" class="input">				
+			</div>
+		</div>
+		<div>
+			<div class="font">생년월일</div>
+			<div id="days">
+				<div class="day_box">
+					<input type="text" id="year" class="day_input" placeholder="년(4자)">
+				</div>			
+				<div class="day_box">
+					<select id="day_font">
+					   <option>월</option><option>1</option><option>2</option><option>3</option>
+					   <option>4</option><option>5</option><option>6</option>
+					   <option>7</option><option>8</option><option>9</option>
+					   <option>10</option><option>11</option><option>12</option>
+					</select>
+				</div>			
+				<div class="day_box">
+					<input type="text" id="dayofweek" class="day_input" placeholder="일">
+				</div>			
+			</div>
+		</div>
+		<div>
+			<div class="font">성별</div>
+			<div class="box">
+				<select class="font">
+				   <option>성별</option>
+				   <option>남자</option>
+				   <option>여자</option>
+				   <option>선택 안함</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<div class="font">
+				본인 확인 이메일
+				<span class="font_s">(선택)</span>
+			</div>
+			<div class="box">
+				<input type="text" id="email" class="input">
+			</div>
+		</div>
+		
+		<div>
+			<div class="font">휴대전화</div>
+			<div class="box">
+				<select class="font">
+				   <option>대한민국 +82</option>
+				   <option>가나 +233</option>
+				   <option>가봉 +241</option>
+				   <option>가이아나 +592</option>
+				</select>
+			</div>
+			<br />
+			<div id="f_p">
+				<div class="p_box">
+					<input type="text" class="input" placeholder="전화번호 입력"/>
+				</div>
+				<div>
+					<input type="submit" id="button1" value="인증번호 받기"/>
+				</div>
+			</div>
+			<br />
+			<div class="box">
+				<input type="text" id="email" class="input" placeholder="인증번호를 입력하세요" >
+			</div>
+		</div>
+		
+		<div>
+			<div>
+				<input type="submit" id="button2" value="가입하기">
+			</div>
+		</div>
+		<footer id="end">
+			<span>이용약관 | 개인정보처리방침 | 책임의 한계와 법적고지 | 회원정보 고객센터</span><br />
+			<span>
+				<img alt="" src="images/naver_logo.png" height="10">
+				naver Copyright NAVER Corp. All Rights Reserved.
+			</span>
+		</footer>
+	</div>
+</body>
+</html>
