@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout10</title>
+<style type="text/css">
+	body{margin:0px; background:#F0F0F0;}
+	
+	.left { position: fixed; width:150px;height:100%; background:black;}
+	.list_img { position: relative; width:150px;}
+	
+	.movie {position: relative; width: 775px; height:500px; 
+	background: gray; margin: 0 auto;}
+	.list {position: relative;margin:0 auto; width:682px; height:60px;
+	border: 1px dashed gray; line-height:70px; text-align:center; 
+	border:1px dashed yellow;}
+	ul{list-style: none; margin:0px; padding:0px; display: inline-block;	
+	}
+	/* 	display: inline-block; 리스트 가운데 정렬*/
+	ul li{float:left; padding:0 5px; border:0px; font-size:90%; color:white;
+	font-weight: bold;}
+	.movie_box {position: relative; width:682px; height:200px; background:white;
+	margin:0 auto; border:1px dashed yellow;}
+	.movie_img {position: relative; margin:0 auto;width:130px; height:200px; background:orange;
+	margin-right:5px; float:left; border:1px dashed blue;}
+	.movie_img2 {position: relative;margin:0 auto; width:130px; height:200px; background:orange;
+	margin-right:0px; float:left; border:1px dashed blue; }
+</style>
+</head>
+<body>
+	<div class="left">
+		<div>
+			<img alt="" src="images/naverMovie/logo_ci.png">
+			<img alt="" src="images/naverMovie/logo_svc.png">
+		</div>
+		<div class="list_img"><img alt="" src="images/naverMovie/btn1.png"></div>
+		<div class="list_img"><img alt="" src="images/naverMovie/btn2.png"></div>
+		<div class="list_img"><img alt="" src="images/naverMovie/btn3.png"></div>
+		<div class="list_img"><img alt="" src="images/naverMovie/btn4.png"></div>
+		<div class="list_img"><img alt="" src="images/naverMovie/btn5.png"></div>
+		<div class="list_img">><img alt="" src="images/naverMovie/btn6.png"></div>
+		<div class="list_img"><img alt="" src="images/naverMovie/indi.png"></div>
+	</div>
+	
+	<div class="movie">
+		<div class="list">
+			<ul>
+			  <li>예매순</li>
+			  <li>현재상영작</li>
+			  <li>개봉예정작</li>
+			  <li>평점순</li>
+			  <li>박스오피스</li>
+			  <li>다운로드순</li>
+			</ul>
+		</div>
+		<div class="movie_box">
+			<div class="movie_img"><img alt="" src="images/naverMovie/1.png"></div>
+			<div class="movie_img"><img alt="" src="images/naverMovie/2.png"></div>
+			<div class="movie_img"><img alt="" src="images/naverMovie/3.png"></div>
+			<div class="movie_img"><img alt="" src="images/naverMovie/4.png"></div>
+			<div class="movie_img2"><img alt="" src="images/naverMovie/5.png"></div>
+		</div>
+<!-- 		<br /> -->
+		<div class="movie_box">			
+			<div class="movie_img"><img alt="" src="images/naverMovie/6.png"></div>
+			<div class="movie_img"><img alt="" src="images/naverMovie/7.png"></div>
+			<div class="movie_img"><img alt="" src="images/naverMovie/8.png"></div>
+			<div class="movie_img"><img alt="" src="images/naverMovie/9.png"></div>
+			<div class="movie_img2"><img alt="" src="images/naverMovie/10.png"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout11</title>
+<style type="text/css">
+	body {margin:0px;}
+	#first {position: relative; width:100%; height:60px; background: orange; border:1px solid gray;}
+	#second {position: relative; width:100%; height:60px; background: yellow; border:1px solid gray;}
+	.box{position: relative; width: 1100px; height:60px; background:white; margin: 0 auto;	}
+	.left {position: relative; width: 600px; height:60px; float:left; border:1px dashed blue;line-height:60px; }
+	.right {position: relative; width: 400px; height:60px; float:right; border:1px dashed red;line-height:60px;}
+	#first ul {list-style: none; padding:0; margin:0; display: inline-block;}
+	#first ul li {float:left; color:gray; padding:0 5px;}
+	#first .right img {float:right;}
+	#second ul {list-style: none; padding:0; margin:0; display: inline-block;}
+	#second ul li {float:left; padding:0 5px;}
+	#second .left ul li {list-style: none; padding:0; margin:0 10px; display: inline-block;
+	 font-size:120%; font-weight: bold; }
+	#second_right {float:right;}
+	#third{position: relative; width:100%; height:550px; background: orange; border:1px solid gray;	}
+	#third_btn{position: relative;width:1200px; height:550px; background:yellow;
+	 border:1px solid gray; margin: 0 auto;}
+	 #btn_right{position: relative; width:50px; height:50px; right:calc(50%+225px); text-align:center;
+/* 	 background:; */
+	 }
+	#third_box{position: relative;width:1100px; height:550px; background:orange;
+	 border:1px solid black; margin: 0 auto;}
+	 #third_view{position: relative; width:1098px; height:500px; background:yellow; 
+	 border:1px solid gray; top:50px;}
+	 .imgbox {position:relative; width:269px; height:250px;margin-right:4px; float:left;
+	 border:1px solid orange;}
+	 .imgbox:nth-child(4n) {margin-right:0px;}
+	 .img {position:relative; width:267px; height:148px; overflow:hidden; border-radius:10%;
+	 border:1px solid blue;}
+	 .text {position:relative; width:267px; height:100px; overflow:hidden;border:1px solid blue;
+	 font-size:90%; color:gray;}
+	 
+</style>
+</head>
+<body>
+	<div id="first">
+		<div class="box">
+			<div class="left">
+				<ul>
+				  <li><img alt="" src="images/logo.png"></li>
+				  <li>연예</li>
+				  <li>뉴스</li>
+				  <li>스포츠</li>
+				  <li>영화</li>
+				  <li>자동차</li>
+				</ul>
+			</div>
+			<div class="right">
+				<img alt="" src="images/all.png">
+				<img alt="" src="images/log.png">
+			</div>
+		</div>
+	</div>
+	<div id="second">
+		<div class="box">
+			<div class="left">
+				<ul>
+				  <li>홈</li>
+				  <li>랭킹</li>
+				  <li>뉴스</li>
+				  <li>TV</li>
+				  <li>포토</li>
+				  <li>투표</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div id="second_right">
+					<span style="font-size:120%; font-weight: bold;">TV 브랜드관</span>
+					<img alt="" src="images/btn_process_down.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="third">
+		<div id="third_btn">
+			<div id="btn_right"></div>
+			<div id="btn_left"></div>
+			<div id="third_box">
+				<div id="third_view">
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+					<div class="imgbox">
+						<div class="img"><img alt="" src="images/Penguins.jpg"></div>
+						<div class="text">군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	좌우 화살표 백그라운드로 넣기 여러 아이콘을 하나의 png 로 만들어서 사용하는 경우가 있음-->
+</body>
+</html>
