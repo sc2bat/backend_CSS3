@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_Product01</title>
+    <style type="text/css">
+        ul{list-style:none; margin:0px; padding:0px;}
+        ul li{position: relative; float: left;padding:0px; margin:10px; overflow: hidden;}
+        .caption{position: absolute; width:300px; height:200px;  left:0px;
+           top:200px;   /* top:0px;*/
+        background:black; transition:0.5s; opacity: 0.7;}
+        .caption h1, .caption p{color:white; text-align: center;}
+
+        ul li:hover .caption{transform:translateY(-200px);}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><!-- 마우스를 <li>에 올리면, .caption 이 위로 올라옵니다. -->
+            <img src="images/prod1.jpg" alt="">
+            <div class="caption">
+                <h1>상품1</h1>
+                <p>상품1 : 설명 텍스트</p>
+                <p>가격 : 12,345원</p>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li><!-- 마우스를 <li>에 올리면, .caption 이 위로 올라옵니다. -->
+            <img src="images/prod2.jpg" alt="">
+            <div class="caption">
+                <h1>상품2</h1>
+                <p>상품2 : 설명 텍스트</p>
+                <p>가격 : 12,345원</p>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li><!-- 마우스를 <li>에 올리면, .caption 이 위로 올라옵니다. -->
+            <img src="images/prod3.jpg" alt="">
+            <div class="caption">
+                <h1>상품3</h1>
+                <p>상품3 : 설명 텍스트</p>
+                <p>가격 : 12,345원</p>
+            </div>
+        </li>
+    </ul>
+    <!-- <div class=""><img src="images/prod1.jpg" alt=""></div> -->
+</body>
+</html>
