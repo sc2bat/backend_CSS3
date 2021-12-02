@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09_Transform_Rotate3D</title>
+    <style type="text/css">
+        .pers, .no-pers{width:152px; height:180px; border:1px solid black; float: left; margin:30px;}
+        .s{transition:0.5s;}
+
+        /* .pers .rotatex{perspective: 300px;}
+        .pers .rotatey{perspective: 300px;} */
+        /* 운영체제 별로 명령어를 별도로 사용할 수 있음 */
+        .pers *{perspective: 300px;}
+        /* px; 의 크기가 작을수록 가깝게 크면 멀게 원근법 */
+
+        .rotatex img:hover{transform:rotateX(50deg);}
+        .rotatey img:hover{transform:rotateY(50deg);}
+        /* 그림 자체가 돌아가는 것 줄어드는것이 아님 */
+    </style>
+</head>
+<body>
+    <h4>원본 이미지</h4>
+    <div><img src="images/sunset.jpg" alt=""></div>
+    <div class="no-pers">
+        <div class="rotatex"><img src="images/sunset.jpg" class="s"></div>
+    </div>
+    <div class="pers">
+        <div class="rotatex"><img src="images/sunset.jpg" class="s"></div>
+    </div>
+    <div class="pers">
+        <div class="rotatey"><img src="images/sunset.jpg" class="s"></div>
+    </div>
+</body>
+</html>
